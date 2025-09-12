@@ -1,0 +1,18 @@
+@import '../_variables.css';
+.card {
+  background: var(--md3-surface);
+  border-radius: var(--md3-radius);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  padding: 1.5rem;
+  margin: 1rem 0;
+  border: 1px solid var(--md3-outline);
+}
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+.card-content {
+  font-size: 1rem;
+  color: #444;
+}

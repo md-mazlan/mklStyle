@@ -1,0 +1,22 @@
+@import '../_variables.css';
+.input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--md3-outline);
+  border-radius: var(--md3-radius);
+  background: var(--md3-surface);
+  color: #222;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  transition: border 0.2s;
+}
+.input:focus {
+  border-color: var(--md3-primary);
+  outline: none;
+}
+.label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #444;
+}

@@ -1,0 +1,28 @@
+@import '../_variables.css';
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--md3-surface);
+  border-bottom: 1px solid var(--md3-outline);
+  padding: 0.75rem 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+}
+.navbar-brand {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--md3-primary);
+}
+.navbar-menu {
+  display: flex;
+  gap: 1.5rem;
+}
+.navbar-link {
+  color: #222;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.navbar-link:hover {
+  color: var(--md3-primary);
+}

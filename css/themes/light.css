@@ -1,0 +1,8 @@
+@import '../_variables.css';
+:root {
+  --md3-primary: #6750a4;
+  --md3-on-primary: #fff;
+  --md3-background: #f5f5f5;
+  --md3-surface: #fff;
+  --md3-outline: #79747e;
+}

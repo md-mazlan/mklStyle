@@ -1,0 +1,22 @@
+@import './_variables.css';
+
+html, body {
+  font-family: var(--md3-font-family);
+  background: var(--md3-background);
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  margin: 0 0 0.5em 0;
+}
+
+a {
+  color: var(--md3-primary);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}

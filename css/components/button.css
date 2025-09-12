@@ -1,0 +1,28 @@
+@import '../_variables.css';
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1.25rem;
+  border: none;
+  border-radius: var(--md3-radius);
+  background: var(--md3-primary);
+  color: var(--md3-on-primary);
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.button:hover {
+  background: #574191;
+}
+.button.outline {
+  background: transparent;
+  color: var(--md3-primary);
+  border: 2px solid var(--md3-primary);
+}
+.button.text {
+  background: none;
+  color: var(--md3-primary);
+  border: none;
+}

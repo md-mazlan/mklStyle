@@ -1,0 +1,27 @@
+/* Bootstrap-like color variants */
+.bg-primary { background-color: var(--bs-primary) !important; color: var(--bs-white) !important; }
+.bg-secondary { background-color: var(--bs-secondary) !important; color: var(--bs-white) !important; }
+.bg-success { background-color: var(--bs-success) !important; color: var(--bs-white) !important; }
+.bg-info { background-color: var(--bs-info) !important; color: var(--bs-dark) !important; }
+.bg-warning { background-color: var(--bs-warning) !important; color: var(--bs-dark) !important; }
+.bg-danger { background-color: var(--bs-danger) !important; color: var(--bs-white) !important; }
+.bg-light { background-color: var(--bs-light) !important; color: var(--bs-dark) !important; }
+.bg-dark { background-color: var(--bs-dark) !important; color: var(--bs-white) !important; }
+
+.button.primary { background: var(--bs-primary); color: var(--bs-white); }
+.button.secondary { background: var(--bs-secondary); color: var(--bs-white); }
+.button.success { background: var(--bs-success); color: var(--bs-white); }
+.button.info { background: var(--bs-info); color: var(--bs-dark); }
+.button.warning { background: var(--bs-warning); color: var(--bs-dark); }
+.button.danger { background: var(--bs-danger); color: var(--bs-white); }
+.button.light { background: var(--bs-light); color: var(--bs-dark); }
+.button.dark { background: var(--bs-dark); color: var(--bs-white); }
+
+.card.primary { border-color: var(--bs-primary); }
+.card.secondary { border-color: var(--bs-secondary); }
+.card.success { border-color: var(--bs-success); }
+.card.info { border-color: var(--bs-info); }
+.card.warning { border-color: var(--bs-warning); }
+.card.danger { border-color: var(--bs-danger); }
+.card.light { border-color: var(--bs-light); }
+.card.dark { border-color: var(--bs-dark); }
