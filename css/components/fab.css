@@ -2,11 +2,14 @@
 
 
 /* Material Design 3 FAB */
-.fab {
+/* FAB styles for both <button> and <a> */
+.fab,
+a.fab {
     position: fixed;
     right: 2rem;
     bottom: 2rem;
     z-index: 1100;
+    text-decoration: none;
 }
 
 /* Dynamic FAB positioning using data attributes and CSS variables */

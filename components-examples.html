@@ -108,27 +108,49 @@
   </div>
 
   <!-- Floating Action Buttons -->
-  <!-- Default: bottom right -->
+  <!-- Default: bottom right (button) -->
   <button class="fab" aria-label="Add">
     <span class="material-icons">add</span>
   </button>
-  <!-- Mini FAB: bottom right, above default FAB -->
+  <!-- Default: bottom right (link) -->
+  <a href="#" class="fab" aria-label="Add as link" style="bottom: 14rem;">
+    <span class="material-icons">add</span>
+  </a>
+  <!-- Mini FAB: bottom right, above default FAB (button) -->
   <button class="fab mini" aria-label="Back" style="bottom: 6rem;">
     <span class="material-icons">arrow_back</span>
   </button>
-  <!-- Extended FAB: bottom right, above mini FAB -->
+  <!-- Mini FAB: bottom right, above default FAB (link) -->
+  <a href="#" class="fab mini" aria-label="Back as link" style="bottom: 20rem;">
+    <span class="material-icons">arrow_back</span>
+  </a>
+  <!-- Extended FAB: bottom right, above mini FAB (button) -->
   <button class="fab extended" style="bottom: 10rem;">
     <span class="material-icons">navigation</span>
     <span class="fab-label">Navigate</span>
   </button>
-  <!-- Mini Extended FAB: bottom left (dynamic position example) -->
+  <!-- Extended FAB: bottom right, above mini FAB (link) -->
+  <a href="#" class="fab extended" style="bottom: 24rem;">
+    <span class="material-icons">navigation</span>
+    <span class="fab-label">Navigate</span>
+  </a>
+  <!-- Mini Extended FAB: bottom left (dynamic position example, button) -->
   <button class="fab extended mini" data-fab-bottom data-fab-left style="--fab-bottom:2rem; --fab-left:2rem;">
     <span class="material-icons">arrow_back</span>
     <span class="fab-label">Back</span>
   </button>
-  <!-- Top left FAB (dynamic position example) -->
+  <!-- Mini Extended FAB: bottom left (dynamic position example, link) -->
+  <a href="#" class="fab extended mini" data-fab-bottom data-fab-left style="--fab-bottom:6rem; --fab-left:2rem;">
+    <span class="material-icons">arrow_back</span>
+    <span class="fab-label">Back</span>
+  </a>
+  <!-- Top left FAB (dynamic position example, button) -->
   <button class="fab" data-fab-top data-fab-left style="--fab-top:2rem; --fab-left:2rem;">
     <span class="material-icons">edit</span>
   </button>
+  <!-- Top left FAB (dynamic position example, link) -->
+  <a href="#" class="fab" data-fab-top data-fab-left style="--fab-top:6rem; --fab-left:2rem;">
+    <span class="material-icons">edit</span>
+  </a>
 </body>
 </html>
