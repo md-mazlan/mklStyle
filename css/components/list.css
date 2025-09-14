@@ -1,0 +1,58 @@
+@import '../_variables.css';
+
+/* Material Design 3 List Styles */
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background: var(--md3-surface);
+  border-radius: var(--md3-radius);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  overflow: hidden;
+}
+.list-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid var(--md3-outline);
+  background: none;
+  transition: background 0.15s;
+  cursor: pointer;
+}
+.list-item:last-child {
+  border-bottom: none;
+}
+.list-item:hover {
+  background: rgba(103,80,164,0.06); /* md3 primary with opacity */
+}
+.list-item .list-icon {
+  font-size: 1.5rem;
+  color: var(--md3-primary);
+  min-width: 2rem;
+  text-align: center;
+}
+.list-item .list-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.list-item .list-title {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #222;
+}
+.list-item .list-subtitle {
+  font-size: 0.92rem;
+  color: #666;
+  margin-top: 0.15rem;
+}
+.list-item .list-action {
+  margin-left: auto;
+  color: var(--md3-outline);
+  font-size: 1.25rem;
+  transition: color 0.15s;
+}
+.list-item .list-action:hover {
+  color: var(--md3-primary);
+}

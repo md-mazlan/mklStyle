@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Material Design 3 Text Field Demo</title>
+  <link rel="stylesheet" href="css/mklstyle.css">
+  <link rel="stylesheet" href="css/material-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <style>body { background: #fff; min-height: 100vh; display: flex; align-items: center; justify-content: center; }</style>
+</head>
+<body>
+  <div style="width:100%; max-width:400px;">
+    <h2 style="text-align:center; font-family:Roboto,Arial,sans-serif; margin-bottom:1.5rem;">Material 3 Text Field Demo</h2>
+    <form autocomplete="off" >
+      <div class="textfield">
+        <input class="textfield-input" id="fullname" type="text" placeholder=" " required>
+        <label class="textfield-label" for="fullname">Full Name</label>
+        <span class="textfield-helper">Your legal name as per NRIC</span>
+      </div>
+      <div class="textfield">
+        <input class="textfield-input" id="nric" type="text" placeholder=" " required>
+        <label class="textfield-label" for="nric">NRIC</label>
+        <span class="textfield-helper">Format: xxxxxx-xx-xxxx</span>
+      </div>
+      <div class="textfield">
+        <input class="textfield-input" id="email" type="email" placeholder=" " required>
+        <label class="textfield-label" for="email">Email</label>
+        <span class="textfield-helper">We'll never share your email.</span>
+      </div>
+      <div class="textfield">
+        <input class="textfield-input" id="username" type="text" placeholder=" " required>
+        <label class="textfield-label" for="username">Username</label>
+      </div>
+      <button class="button primary" type="submit" style="width:100%;margin-top:1.5rem;">Submit</button>
+    </form>
+  </div>
+</body>
+</html>

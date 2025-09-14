@@ -6,6 +6,7 @@
   <title>MklStyle Components Examples</title>
   <link rel="stylesheet" href="css/mklstyle.css">
   <link rel="stylesheet" href="css/material-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <style>body { min-height: 120vh; padding-bottom: 8rem; }</style>
 </head>
 <body>
@@ -98,6 +99,35 @@
       </div>
     </div>
 
+    <!-- List -->
+    <h2>List</h2>
+    <ul class="list" style="max-width: 480px; margin-bottom: 2rem;">
+      <li class="list-item">
+        <span class="list-icon"><i class="fas fa-user"></i></span>
+        <span class="list-content">
+          <span class="list-title">John Doe</span>
+          <span class="list-subtitle">john.doe@email.com</span>
+        </span>
+        <span class="list-action"><i class="fas fa-chevron-right"></i></span>
+      </li>
+      <li class="list-item">
+        <span class="list-icon"><i class="fas fa-user-tie"></i></span>
+        <span class="list-content">
+          <span class="list-title">Jane Smith</span>
+          <span class="list-subtitle">jane.smith@email.com</span>
+        </span>
+        <span class="list-action"><i class="fas fa-chevron-right"></i></span>
+      </li>
+      <li class="list-item">
+        <span class="list-icon"><i class="fas fa-user-nurse"></i></span>
+        <span class="list-content">
+          <span class="list-title">Alex Lee</span>
+          <span class="list-subtitle">alex.lee@email.com</span>
+        </span>
+        <span class="list-action"><i class="fas fa-chevron-right"></i></span>
+      </li>
+    </ul>
+
     <!-- Grid -->
     <h2>Grid</h2>
     <div class="grid grid-cols-3">
@@ -109,7 +139,7 @@
 
   <!-- Floating Action Buttons -->
   <!-- Default: bottom right (button) -->
-  <button class="fab" aria-label="Add">
+  <button class="fab animate__animated animate__bounceInRight" aria-label="Add">
     <span class="material-icons">add</span>
   </button>
   <!-- Default: bottom right (link) -->
@@ -125,7 +155,7 @@
     <span class="material-icons">arrow_back</span>
   </a>
   <!-- Extended FAB: bottom right, above mini FAB (button) -->
-  <button class="fab extended" style="bottom: 10rem;">
+  <button class="fab extended " style="bottom: 10rem;">
     <span class="material-icons">navigation</span>
     <span class="fab-label">Navigate</span>
   </button>
@@ -135,12 +165,12 @@
     <span class="fab-label">Navigate</span>
   </a>
   <!-- Mini Extended FAB: bottom left (dynamic position example, button) -->
-  <button class="fab extended mini" data-fab-bottom data-fab-left style="--fab-bottom:2rem; --fab-left:2rem;">
+  <button class="fab extended mini animate__animated animate__bounceInLeft" data-fab-bottom data-fab-left style="--fab-bottom:2rem; --fab-left:2rem;">
     <span class="material-icons">arrow_back</span>
     <span class="fab-label">Back</span>
   </button>
   <!-- Mini Extended FAB: bottom left (dynamic position example, link) -->
-  <a href="#" class="fab extended mini" data-fab-bottom data-fab-left style="--fab-bottom:6rem; --fab-left:2rem;">
+  <a href="#" class="fab extended mini animate__animated animate__bounceInLeft" data-fab-bottom data-fab-left style="--fab-bottom:6rem; --fab-left:2rem;">
     <span class="material-icons">arrow_back</span>
     <span class="fab-label">Back</span>
   </a>
