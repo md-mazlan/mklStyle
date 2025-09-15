@@ -3,44 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MklStyle Components Examples</title>
+  <title>MklStyle Components Dark Mode Demo</title>
   <link rel="stylesheet" href="css/mklstyle.css">
   <link rel="stylesheet" href="css/material-icons.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <style>body { min-height: 120vh; padding-bottom: 8rem; }</style>
 </head>
-<body>
+<body class="dark-mode">
   <button id="darkModeToggle" class="button dark" style="position:fixed;top:1rem;right:1rem;z-index:2000;">Toggle Dark Mode</button>
   <script>
     const toggle = document.getElementById('darkModeToggle');
     toggle.onclick = function() {
       document.body.classList.toggle('dark-mode');
-      if(document.body.classList.contains('dark-mode')) {
-        document.body.setAttribute('data-theme', 'dark');
-        document.querySelector('link[href*="themes/light.css"]')?.remove();
-        if(!document.querySelector('link[href*="themes/dark.css"]')) {
-          const l = document.createElement('link');
-          l.rel = 'stylesheet';
-          l.href = 'css/themes/dark.css';
-          document.head.appendChild(l);
-        }
-      } else {
-        document.body.setAttribute('data-theme', 'light');
-        document.querySelector('link[href*="themes/dark.css"]')?.remove();
-        if(!document.querySelector('link[href*="themes/light.css"]')) {
-          const l = document.createElement('link');
-          l.rel = 'stylesheet';
-          l.href = 'css/themes/light.css';
-          document.head.appendChild(l);
-        }
-      }
     };
-    // Default to light theme
-    document.body.setAttribute('data-theme', 'light');
-    const lightTheme = document.createElement('link');
-    lightTheme.rel = 'stylesheet';
-    lightTheme.href = 'css/themes/light.css';
-    document.head.appendChild(lightTheme);
   </script>
   <nav class="navbar">
     <span class="navbar-brand">MklStyle</span>
@@ -52,13 +27,12 @@
   </nav>
 
   <div class="container" style="max-width: 800px; margin: 2rem auto;">
-
-    <h1>Component Examples</h1>
+    <h1>Component Examples (Dark Mode)</h1>
 
     <!-- Material Design 3 Search Component -->
     <div class="search-field">
       <input class="search-input" type="search" placeholder="Search..." aria-label="Search">
-      <span class="search-icon"><i class="fas fa-search"></i></span>
+      <span class="search-icon"><i class="material-icons">search</i></span>
     </div>
 
     <!-- Button -->
@@ -110,28 +84,28 @@
     <h2>List</h2>
     <ul class="list" style="max-width: 480px; margin-bottom: 2rem;">
       <li class="list-item">
-        <span class="list-icon"><i class="fas fa-user"></i></span>
+        <span class="list-icon"><i class="material-icons">person</i></span>
         <span class="list-content">
           <span class="list-title">John Doe</span>
           <span class="list-subtitle">john.doe@email.com</span>
         </span>
-        <span class="list-action"><i class="fas fa-chevron-right"></i></span>
+        <span class="list-action"><i class="material-icons">chevron_right</i></span>
       </li>
       <li class="list-item">
-        <span class="list-icon"><i class="fas fa-user-tie"></i></span>
+        <span class="list-icon"><i class="material-icons">person</i></span>
         <span class="list-content">
           <span class="list-title">Jane Smith</span>
           <span class="list-subtitle">jane.smith@email.com</span>
         </span>
-        <span class="list-action"><i class="fas fa-chevron-right"></i></span>
+        <span class="list-action"><i class="material-icons">chevron_right</i></span>
       </li>
       <li class="list-item">
-        <span class="list-icon"><i class="fas fa-user-nurse"></i></span>
+        <span class="list-icon"><i class="material-icons">person</i></span>
         <span class="list-content">
           <span class="list-title">Alex Lee</span>
           <span class="list-subtitle">alex.lee@email.com</span>
         </span>
-        <span class="list-action"><i class="fas fa-chevron-right"></i></span>
+        <span class="list-action"><i class="material-icons">chevron_right</i></span>
       </li>
     </ul>
 
