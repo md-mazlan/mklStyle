@@ -14,7 +14,7 @@
   display: flex;
   align-items: center;
   gap: 1rem;
-  padding: 1rem 1.5rem;
+  padding: 1rem;
   border-bottom: 1px solid var(--md3-outline);
   background: none;
   transition: background 0.15s;
