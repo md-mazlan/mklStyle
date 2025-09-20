@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAB Demo - MklStyle</title>
+  <link rel="stylesheet" href="css/mklstyle.css">
+  <link rel="stylesheet" href="css/material-icons.css">
+  <style>
+    body { min-height: 100vh; background: #f5f5f5; }
+    .demo-section { max-width: 600px; margin: 2rem auto; padding: 2rem; background: #fff; border-radius: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.07); }
+    h1, h2 { font-family: 'Roboto', Arial, sans-serif; }
+    .fab-demo-row { display: flex; gap: 2rem; align-items: center; margin-bottom: 2rem; }
+    .fab-label-demo { margin-top:0.5rem;font-size:0.95rem;color:#555; }
+  </style>
+</head>
+<body>
+  <div class="demo-section">
+    <h1>Floating Action Button (FAB) Demo</h1>
+    <div class="fab-demo-row" style="position:fixed;right:2rem;bottom:2rem;z-index:1200;gap:1.5rem;display:flex;flex-direction:row;align-items:flex-end;">
+      <div style="text-align:center;">
+        <button class="fab" aria-label="Default FAB" style="position:static;">
+          <span class="material-icons">add</span>
+        </button>
+        <div class="fab-label-demo">Default FAB</div>
+      </div>
+      <div style="text-align:center;">
+        <button class="fab extended" aria-label="Extended FAB" style="position:static;">
+          <span class="material-icons">navigation</span>
+          <span class="fab-label">Navigate</span>
+        </button>
+        <div class="fab-label-demo">Extended FAB</div>
+      </div>
+      <div style="text-align:center;">
+        <button class="fab extended mini" aria-label="Mini Extended FAB" style="position:static;">
+          <span class="material-icons">arrow_back</span>
+          <span class="fab-label">Back</span>
+        </button>
+        <div class="fab-label-demo">Mini Extended FAB</div>
+      </div>
+      <div style="text-align:center;">
+        <button class="fab extended" style="--fab-bg:#ff9800;--fab-color:#fff;position:static;" aria-label="Custom Color FAB">
+          <span class="material-icons">send</span>
+          <span class="fab-label">Send</span>
+        </button>
+        <div class="fab-label-demo" style="color:#ff9800;">Custom Color FAB</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

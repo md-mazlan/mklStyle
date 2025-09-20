@@ -19,6 +19,7 @@ a.fab {
 .fab[data-fab-right]  { right: var(--fab-right, auto); }
 
 /* FAB visual styles (after position rules) */
+
 .fab {
     display: inline-flex;
     align-items: center;
@@ -26,8 +27,8 @@ a.fab {
     width: 56px;
     height: 56px;
     border-radius: 16px;
-    background: var(--md3-primary);
-    color: var(--md3-on-primary);
+    background: var(--fab-bg, var(--md3-primary));
+    color: var(--fab-color, var(--md3-on-primary));
     box-shadow:
         0px 1.5px 4px 0px rgba(0,0,0,0.13),
         0px 1.5px 8px 1.5px rgba(0,0,0,0.11);
@@ -40,25 +41,26 @@ a.fab {
     user-select: none;
 }
 .fab:active {
-    background: #574191;
+    background: var(--fab-bg-active, #574191);
 }
 .fab:focus-visible {
     outline: 2px solid var(--md3-outline);
     outline-offset: 2px;
 }
 .fab:hover {
-    filter: brightness(0.95);
+    background: var(--fab-bg-hover, color-mix(in srgb, var(--fab-bg, var(--md3-primary)) 90%, #000 10%));
     box-shadow:
         0px 3px 8px 0px rgba(0,0,0,0.16),
         0px 1.5px 8px 1.5px rgba(0,0,0,0.13);
 }
+
 
 .fab-label {
     margin-left: 0.75rem;
     font-size: 1rem;
     font-weight: 500;
     background: transparent;
-    color: var(--md3-on-primary);
+    color: var(--fab-label-color, var(--fab-color, var(--md3-on-primary)));
     padding: 0;
     border-radius: 0;
     box-shadow: none;
