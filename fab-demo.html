@@ -17,35 +17,47 @@
 <body>
   <div class="demo-section">
     <h1>Floating Action Button (FAB) Demo</h1>
-    <div class="fab-demo-row" style="position:fixed;right:2rem;bottom:2rem;z-index:1200;gap:1.5rem;display:flex;flex-direction:row;align-items:flex-end;">
-      <div style="text-align:center;">
-        <button class="fab" aria-label="Default FAB" style="position:static;">
-          <span class="material-icons">add</span>
-        </button>
-        <div class="fab-label-demo">Default FAB</div>
-      </div>
-      <div style="text-align:center;">
-        <button class="fab extended" aria-label="Extended FAB" style="position:static;">
-          <span class="material-icons">navigation</span>
-          <span class="fab-label">Navigate</span>
-        </button>
-        <div class="fab-label-demo">Extended FAB</div>
-      </div>
-      <div style="text-align:center;">
-        <button class="fab extended mini" aria-label="Mini Extended FAB" style="position:static;">
-          <span class="material-icons">arrow_back</span>
-          <span class="fab-label">Back</span>
-        </button>
-        <div class="fab-label-demo">Mini Extended FAB</div>
-      </div>
-      <div style="text-align:center;">
-        <button class="fab extended" style="--fab-bg:#ff9800;--fab-color:#fff;position:static;" aria-label="Custom Color FAB">
-          <span class="material-icons">send</span>
-          <span class="fab-label">Send</span>
-        </button>
-        <div class="fab-label-demo" style="color:#ff9800;">Custom Color FAB</div>
-      </div>
-    </div>
+
+    <!-- FABs using recommended positioning from fab.css -->
+    <button class="fab" aria-label="Default FAB"></button>
+    <button class="fab extended" aria-label="Extended FAB" style="bottom:6rem;">
+      <span class="material-icons">navigation</span>
+      <span class="fab-label">Navigate</span>
+    </button>
+    <button class="fab extended mini" aria-label="Mini Extended FAB" style="bottom:12rem;">
+      <span class="material-icons">arrow_back</span>
+      <span class="fab-label">Back</span>
+    </button>
+    <button class="fab extended" style="--fab-bg:#ff9800;--fab-color:#fff;bottom:18rem;" aria-label="Custom Color FAB">
+      <span class="material-icons">send</span>
+      <span class="fab-label">Send</span>
+    </button>
+
+    <!-- Top Right FAB -->
+    <button class="fab" data-fab-top data-fab-right style="--fab-top:2rem; --fab-right:2rem;">
+      <span class="material-icons">add</span>
+    </button>
+    <!-- Top Left FAB -->
+    <button class="fab" data-fab-top data-fab-left style="--fab-top:2rem; --fab-left:2rem;">
+      <span class="material-icons">add</span>
+    </button>
+    <!-- Bottom Left FAB -->
+    <button class="fab" data-fab-bottom data-fab-left style="--fab-bottom:2rem; --fab-left:2rem;">
+      <span class="material-icons">add</span>
+    </button>
+
+    <!-- Top Right FAB -->
+    <button class="fab" aria-label="Top Right FAB" style="position:fixed;top:2rem;right:2rem;z-index:1200;">
+      <span class="material-icons">add</span>
+    </button>
+    <!-- Top Left FAB -->
+    <button class="fab" aria-label="Top Left FAB" style="position:fixed;top:2rem;left:2rem;z-index:1200;">
+      <span class="material-icons">add</span>
+    </button>
+    <!-- Bottom Left FAB -->
+    <button class="fab" aria-label="Bottom Left FAB" style="position:fixed;bottom:2rem;left:2rem;z-index:1200;">
+      <span class="material-icons">add</span>
+    </button>
   </div>
 </body>
 </html>
