@@ -7,7 +7,45 @@
   <link rel="stylesheet" href="css/mklstyle.css">
   <link rel="stylesheet" href="css/material-icons.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-  <style>body { background: #fff; min-height: 100vh; display: flex; align-items: center; justify-content: center; }</style>
+  <style>
+    body {
+      background: #fff;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #222;
+    }
+    @media (prefers-color-scheme: dark) {
+      body {
+        background: #181a20;
+        color: #f3f3f3;
+      }
+      .textfield-input {
+        background: #23262f;
+        color: #f3f3f3;
+        border-color: #444a5a;
+      }
+      .textfield-label {
+        color: #bbb;
+        background: transparent;
+      }
+      .textfield-input:focus + .textfield-label,
+      .textfield-input:not(:placeholder-shown) + .textfield-label {
+        color: #a7b6ff;
+        background: #23262f;
+      }
+      .textfield-helper {
+        color: #bbb;
+      }
+      .textfield-warning {
+        color: #ffb74d;
+      }
+      .textfield-error {
+        color: #ff6f6f;
+      }
+    }
+  </style>
 </head>
 <body>
   <div style="width:100%; max-width:400px;">
@@ -17,6 +55,16 @@
         <input class="textfield-input" id="fullname" type="text" placeholder=" " required>
         <label class="textfield-label" for="fullname">Full Name</label>
         <span class="textfield-helper">Your legal name as per NRIC</span>
+      </div>
+      <div class="textfield">
+        <input class="textfield-input" id="warning" type="text" placeholder=" ">
+        <label class="textfield-label" for="warning">Warning Example</label>
+        <span class="textfield-warning">This is a warning message.</span>
+      </div>
+      <div class="textfield">
+        <input class="textfield-input" id="error" type="text" placeholder=" ">
+        <label class="textfield-label" for="error">Error Example</label>
+        <span class="textfield-error">This is an error message.</span>
       </div>
       <div class="textfield">
         <input class="textfield-input" id="nric" type="text" placeholder=" " required>

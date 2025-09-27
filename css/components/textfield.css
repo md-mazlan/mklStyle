@@ -54,6 +54,21 @@
     margin-left: 0.1rem;
 }
 
+@media (prefers-color-scheme: dark) {
+    .textfield-helper {
+        color: #bbb;
+    }
+    .textfield-warning {
+        color: #ffb74d;
+    }
+    .textfield-error {
+        color: #ff6f6f;
+    }
+}
+
+.textfield-warning {
+    color: #ff9800;
+}
 .textfield-error {
     color: var(--md3-error);
 }
